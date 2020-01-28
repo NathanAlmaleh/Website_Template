@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text&display=swap');
+body {
+    background-color: rgb(165, 224, 228);
+    font-family: 'Crimson Text', serif;
+    font-size: 2;
+}
+
+header {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+nav {
+    text-align: center;
+    padding: 10px 0;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 10px;
+}
+
+nav li {
+    display: inline-block;
+    padding: 10px;
+}
+
+nav a {
+    display: block;
+    color: blue;
+    border: seagreen solid;
+    border-radius: 10px;
+    text-decoration: none;
+    max-width: 100%;
+
+}
+
+nav a:hover {
+    background-color: lightpink;
+    color: black;
+}
+
+.wrapper {
+    border: 5px black solid;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+#main {
+    width: 100%;
+}
+
+#firstSection {
+    padding: 5px;
+}
+
+#secondSection {
+    padding: 5px;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    padding-top: 25px;
+    color: white;
+}
+
+@media screen and (min-width: 1000px) {
+    nav {
+        float: left;
+        max-width: 3%;
+        padding: 0;
+        padding-left: 5px;
+        margin: 0;
+        text-align: left;
+    }
+    nav ul {
+        padding: 0;
+        margin: 0;
+    }
+    nav li {
+        display: block;
+        width: 100%;
+        border: 0;
+        padding: 0;
+        margin: 0;
+    }
+    nav a:hover {
+        width: 100%;
+        color: black;
+    }
+    nav a {
+        border: none;
+        padding: 0;
+        margin: 0;
+        font-size: x-large;
+    }
+    #main {
+        float: right;
+        width: 90%;
+    }
+    #firstSection {
+        max-width: 60%;
+        float: left;
+        padding: 0;
+        margin: 0;
+    }
+    #secondSection {
+        max-width: 38%;
+        float: right;
+        padding: 2px;
+        padding-left: 5px;
+        margin: 0;
+    }
+    footer {
+        clear: both;
+        position: relative;
+        height: 20px;
+        margin-top: -200px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .wrapper {
+        max-width: 1100px;
+    }
+}
