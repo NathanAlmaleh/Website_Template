@@ -47,7 +47,38 @@ div{
 }
 .section{
     min-width: 1000px;
+    
+    min-height: 1000px;
     position: static;
     padding-top: 100px;
     background-color: rgb(55, 211, 211);
 }
+.section:nth-child(even){
+    background-color: lightgrey;
+}
+#home{
+    background: url('homeBackground.jpg') no-repeat;
+    background-size:cover ;
+}
+#about{
+    background: url('aboutBackground.jpg') no-repeat;
+    background-size:cover ;
+}
+#product{
+    background: url('productBackground.jpg') no-repeat;
+    background-size:cover ;
+}
+#contact{
+    background: url('contactBackground.jpg') no-repeat;
+    background-size:cover ;
+}
+#extra{
+    background: url('extraBackground.jpg') no-repeat;
+    background-size:cover ;
+}
+
+.section article{
+    padding: 15px;
+    background-color:rgb(238, 233, 230,0.8) ;
+}
+
