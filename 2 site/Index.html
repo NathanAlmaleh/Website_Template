@@ -117,6 +117,15 @@
                 $('.nav').slideToggle();
             });
 
+            $(window).bind('resize',function(){
+                var minimenuDisplay = $('#minimenu').css('display');
+                if(minimenuDisplay =='none'){
+                    $('nav').show();
+                }else{
+                    $('.nav').hide();
+                }
+            });
+
             $('.nav li a').click(function(event){
             //when clicking on a button menu find href & position of it
                 var targetSection=$(this).attr('href');
@@ -130,7 +139,7 @@
                     $('nav').slideUp();
                 }
             });
-            
+
             event.preventDefault();
 
             

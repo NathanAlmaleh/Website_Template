@@ -10,7 +10,7 @@ div {
     height: 90px;
     top: 0px;
     left: 0px;
-    background-color: rgb(202, 154, 21);
+    background-color: white;
 }
 
 #logo {
@@ -29,9 +29,14 @@ div {
     text-align: right;
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
+    display: none;
+
 }
 
 .nav ul {
+    padding: 0;
+    margin: 0;
+    display: block;
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -55,6 +60,12 @@ div {
     color: black;
     padding: 10px;
 
+}
+h2{
+    text-align:center;
+    font-style: oblique;
+    font-size: 50px;
+    background-color: rgb(235, 177, 92,0.8);
 }
 
 .section {
@@ -107,11 +118,13 @@ footer {
     padding: 0;
     margin: 0;
 }
+section img{
+    width: 100%;
+    max-width: 600px;
+    min-width: 350px;
+}
 
 @media screen and (max-width:650px) {
-    #header {
-        background-color: blue;
-    }
 
     #minimenu {
         display: block;
