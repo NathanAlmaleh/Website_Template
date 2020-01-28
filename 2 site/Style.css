@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Kalam&display=swap');
+div{
+    font-family: 'Kalam', cursive;
+}
+#header{
+    position: fixed;
+    width:100%;
+    height: 90px;
+    top:0px;
+    left: 0px;
+    background-color: lightpink;
+}
+#logo{
+    float: top-left;
+    background-color: aquamarine;
+    width: 10px;
+    height: 10px;
+}
+#nav{
+    float:right;
+    width :70%;
+    text-align: right;
+
+}
+ul{
+   list-style-type: none;
+}
+li {
+    display: inline-block;
+
+}
+a{
+    list-style-type: none;
+
+}
