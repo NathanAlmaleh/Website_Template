@@ -3,10 +3,11 @@
 div {
     font-family: 'Kalam', cursive;
 }
-#wrapper{
-    min-width:200px;
-    
-    max-width:1200px;
+
+#wrapper {
+    min-width: 200px;
+
+    max-width: 1200px;
 }
 
 #header {
@@ -65,11 +66,18 @@ div {
     padding: 10px;
 
 }
-h2{
-    text-align:center;
+
+h2 {
+    text-align: center;
     font-style: oblique;
     font-size: 50px;
-    background-color: rgb(235, 177, 92,0.8);
+    color: blanchedalmond;
+    background-color: black;
+    border-radius: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    min-width: 180px;
+
 }
 
 .section {
@@ -122,7 +130,8 @@ footer {
     padding: 0;
     margin: 0;
 }
-section img{
+
+section img {
     width: 100%;
     max-width: 600px;
     min-width: 350px;
@@ -137,6 +146,7 @@ section img{
         margin-top: 5px;
         margin-right: 5px;
         cursor: pointer;
+
     }
 
     .nav {
@@ -148,6 +158,10 @@ section img{
         width: 100%;
         background-color: black;
         height: 220px;
+        float: right important !;
+        margin-top: 80px;
+        margin-right: none;
+
     }
 
 
