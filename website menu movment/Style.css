@@ -1,16 +1,26 @@
-
+/*Smallest size of the screen*/
 #primary{
     background-color: green;
 }
 #secondary{
     background-color: yellow;
 }
-
+/*Medium size of the screen*/
 @media screen and (min-width: 480px) {
     #primary{
         background-color: aqua;
     }
     #secondary{
         background-color: brown;
+    }
+}
+
+/*Biggest size of the screen*/
+@media screen and (min-width: 600px) {
+    #primary{
+        background-color: purple;
+    }
+    #secondary{
+        background-color: pink;
     }
 }
