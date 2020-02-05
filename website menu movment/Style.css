@@ -5,14 +5,35 @@
 #secondary{
     background-color: yellow;
 }
+#footer{
+    background-color: orange;
+    clear:both;
+}
+
+.border{
+border:1px solid black;
+}
 /*Medium size of the screen*/
 @media screen and (min-width: 480px) {
     #primary{
+        width: 60%;
+        float: left;
         background-color: aqua;
     }
     #secondary{
+        width: 35%;
+        float: right;
         background-color: brown;
     }
+    #head #logo{
+        width: 45%;
+        float: left;
+    }
+    #head nav{
+        width: 45%;
+        float: right;
+    }
+  
 }
 
 /*Biggest size of the screen*/
