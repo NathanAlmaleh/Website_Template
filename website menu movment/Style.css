@@ -1,47 +1,98 @@
 /*Smallest size of the screen*/
-#primary{
-    background-color: green;
-}
-#secondary{
-    background-color: yellow;
-}
-#footer{
-    background-color: orange;
-    clear:both;
+
+body #head {
+    background-color: rgb(211, 205, 205);
 }
 
-.border{
-border:1px solid black;
+#primary {
+    background-color: blanchedalmond;
+    padding-left: 15px;
 }
+
+#secondary {
+    background-color: gray;
+    padding-left: 15px;
+}
+
+#footer {
+    height: 60px;
+    background-color: black;
+    color: blanchedalmond;
+    padding-top: 20px;
+    clear: both;
+    text-align: center;
+}
+
+.border {
+    border: 1px solid rgb(168, 166, 166);
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav li {
+    margin-left: 20px;
+    display: inline;
+}
+
+nav a {
+    margin-top: 0;
+    padding: 10px 10px;
+    background-color: rgb(211, 205, 205);
+    color: black;
+    border: black 1px solid;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: white;
+    color: black;
+}
+
+
 /*Medium size of the screen*/
-@media screen and (min-width: 480px) {
-    #primary{
+
+@media screen and (min-width: 720px) {
+    body #head {
+        background-color: rgb(211, 205, 205);
+    }
+    #primary {
         width: 60%;
         float: left;
-        background-color: aqua;
     }
-    #secondary{
+    #secondary {
         width: 35%;
         float: right;
-        background-color: brown;
     }
-    #head #logo{
+    #head #logo {
         width: 45%;
         float: left;
     }
-    #head nav{
+    #head nav {
+        padding: 0;
+        margin: 0;
+        width: 45%;
+        float: right;
+        text-align: center;
+    }
+    nav ul {
+        list-style: none;
+        margin-top: 40px;
+        height: 60px;
+    }
+}
+
+
+/*
+@media screen and (min-width: 720px) {
+    #head nav {
         width: 45%;
         float: right;
     }
-  
-}
-
-/*Biggest size of the screen*/
-@media screen and (min-width: 600px) {
-    #primary{
-        background-color: purple;
-    }
-    #secondary{
-        background-color: pink;
+    #head div {
+        width: 45%;
+        float: right;
     }
 }
