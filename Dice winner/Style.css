@@ -3,14 +3,14 @@ body{
     background-color: blanchedalmond;
 }
 #title {
-    background-color: red;
-    color: rgb(19, 54, 158);
+    background-color: rgb(252, 217, 165);
+    color: rgb(3, 19, 66);
     text-align: center;
 }
 
 #Winner {
     background-color: gold;
-    text-align: center;
+   /* text-align: center;*/
     color: royalblue;
 }
 
@@ -29,6 +29,7 @@ body{
 }
 
 .myButton {
+    margin-top: 35px;
     box-shadow: inset 0px 1px 0px 0px #f9eca0;
     background: linear-gradient(to bottom, #f0c911 5%, #f2ab1e 100%);
     background-color: #f0c911;
@@ -62,3 +63,11 @@ body{
     text-align: center;
     font-size: x-large;
 }
+
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+  }
