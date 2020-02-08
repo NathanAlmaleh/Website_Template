@@ -1,0 +1,64 @@
+
+body{
+    background-color: blanchedalmond;
+}
+#title {
+    background-color: red;
+    color: rgb(19, 54, 158);
+    text-align: center;
+}
+
+#Winner {
+    background-color: gold;
+    text-align: center;
+    color: royalblue;
+}
+
+#primary {
+    text-align: center;
+    background-color: blanchedalmond;
+    width: 45%;
+    float: left;
+}
+
+#secondary {
+    text-align: center;
+    background-color: blanchedalmond;
+    width: 45%;
+    float: right;
+}
+
+.myButton {
+    box-shadow: inset 0px 1px 0px 0px #f9eca0;
+    background: linear-gradient(to bottom, #f0c911 5%, #f2ab1e 100%);
+    background-color: #f0c911;
+    border-radius: 6px;
+    border: 1px solid #e65f44;
+    display: inline-block;
+    cursor: pointer;
+    color: #c92200;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ded17c;
+    text-align: center;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%
+}
+
+.myButton:hover {
+    background: linear-gradient(to bottom, #f2ab1e 5%, #f0c911 100%);
+    background-color: #c5ac79;
+}
+
+#footer {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: black;
+    color: blanchedalmond;
+    text-align: center;
+    font-size: x-large;
+}
