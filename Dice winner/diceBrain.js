@@ -2,14 +2,13 @@
 var playerOne ,playerTwo;
 
 function randomNumber(){
-
     playerOne = Math.floor(Math.random() * 6) + 1;
     
-    playerTwo =  Math.floor(Math.random() * 6) + 1;
+    playerTwo = Math.floor(Math.random() * 6) + 1;
 
     console.log(playerOne +" " + playerTwo);
 
-    playerOnePictuer(playerOne)
+    playerOnePictuer(playerOne);
     playerTwoPictuer(playerTwo);
 
     displayWinner();
