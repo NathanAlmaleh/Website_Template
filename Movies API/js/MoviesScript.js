@@ -1,3 +1,4 @@
+//when starting document  find the search box val and go to function getMovies()
 $(document).ready(() => {
 
     $('#searchForm').on('submit', (e) => {
@@ -7,6 +8,7 @@ $(document).ready(() => {
     });
 });
 
+//api request using axios to find all movies with th search text and creating the output 
 function getMovies(searchText) {
     //console.log("inside function: " + searchText);
     let response = axios.get('http://www.omdbapi.com/?s=' + searchText + '&apikey=85a1081')
@@ -16,7 +18,7 @@ function getMovies(searchText) {
             console.log(movies);
             let output = '';
 
-            //loop throw all the movies
+            //loop throw all the movies and add to output
             $.each(movies, (index, movies) => {
 
                 output += `
@@ -29,15 +31,18 @@ function getMovies(searchText) {
                 </div>
                 `;
             });
+            //after creating output appened it to the html
             $('#movies').html(output);
 
         })
+        //catch error
         .catch((err) => {
             console.log(err);
         });
 
 }
 
+//after clicking a movie selected we store the id in the session storage to use it in the movie.html
 function movieSelected(id) {
     sessionStorage.setItem('movieId', id);
     window.location = 'movie.html';
@@ -45,6 +50,7 @@ function movieSelected(id) {
 
 }
 
+//api request using axios to find the movie with the id stored in session and creating the output 
 function getMovie() {
     let movieId = sessionStorage.getItem('movieId');
     let response = axios.get('http://www.omdbapi.com/?i=' + movieId + '&apikey=85a1081')
