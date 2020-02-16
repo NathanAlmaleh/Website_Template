@@ -3,6 +3,7 @@ $(document).ready(() => {
 
     $('#searchForm').on('submit', (e) => {
         let searchText = $('#searchText').val();
+        console.log(searchText);
         getMovies(searchText);
         e.preventDefault();
     });
@@ -20,7 +21,6 @@ function getMovies(searchText) {
 
             //loop throw all the movies and add to output
             $.each(movies, (index, movies) => {
-
                 output += `
                     <div class="col-md-3">
                     <div class = "well text-center">
