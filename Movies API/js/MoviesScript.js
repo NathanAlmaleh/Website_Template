@@ -56,7 +56,7 @@ function getMovie() {
     let response = axios.get('http://www.omdbapi.com/?i=' + movieId + '&apikey=85a1081')
         .then((response) => {
             let movie = response.data;
-            console.log(movie);
+            //console.log(movie);
             let output = '';
             output = `
             <div class="row">
@@ -82,7 +82,12 @@ function getMovie() {
               ${movie.Plot}
               <hr>
               <a href="http://imdb.com/title/${movie.imdbID}" target="_blank" class="btn btn-primary">View IMDB</a>
+              <a onclick="findTrailer('${movie.Title}')" target="_blank" class="btn btn-primary">View Trailer</a>
               <a href="index.html" class="btn btn-Info">Go Back To Search</a>
+            </div>
+            <div class="row">
+            <div id="trailerLinks" class="row">
+            
             </div>
           </div>
                 `;
@@ -92,4 +97,53 @@ function getMovie() {
         .catch((err) => {
             console.log(err);
         });
+}
+
+var youtube_API_URL = 'https://www.googleapis.com/youtube/v3';
+const API_KEY = 'AIzaSyA4SoziK3utbslEjEgAXf7gBAu5tQqPl3c';
+//const API_KEY = APIKEY;
+
+function findTrailer(movieTitle) {
+    var output;
+    /** 
+    let response = axios(youtube_API_URL +
+        '/search?part=snippet&q=' + movieTitle +
+        '&type=video&key=' + API_KEY);
+    console.log(response);
+*/
+    let URL = youtube_API_URL +
+        '/search?part=snippet&q=' + movieTitle + "official-Trailer" +
+        '&type=video&key=' + API_KEY;
+    apiGetAll(URL);
+}
+
+function apiGetAll(URL) {
+    console.log(URL);
+    let listoutput, output;
+    try {
+        const resp = fetch(URL)
+            .then(response => response.json())
+            .then((json) => {
+                console.log(json.items);
+                listoutput = json.items
+                $.each(listoutput, (index, listoutput) => {
+                    //listoutput.snippet.titl
+                    console.log(listoutput.id.videoId);
+                    output += `
+                    <div class="col-md-2">
+                    <div class = "well text-center">
+                    <iframe width="260" height="315" src="https://www.youtube.com/embed/${listoutput.id.videoId}"></iframe>
+                    <a href="https://www.youtube.com/watch?v=${listoutput.id.videoId}"  target="_blank" class="btn btn-secondary">youtube Link</a>
+                </div>
+                </div>
+                        `;
+                    $('#trailerLinks').html(output);
+                });
+
+            });
+        return resp;
+    } catch (err) {
+        // all errors will be captured here for anything in the try block
+        console.log(err)
+    }
 }
