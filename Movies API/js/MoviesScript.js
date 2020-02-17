@@ -130,10 +130,10 @@ function apiGetAll(URL) {
                     //listoutput.snippet.titl
                     console.log(listoutput.id.videoId);
                     output += `
-                    <div class="col-md-2">
+                    <div class="col-md-5">
                     <div class = "well text-center">
-                    <iframe width="260" height="315" src="https://www.youtube.com/embed/${listoutput.id.videoId}"></iframe>
-                    <a href="https://www.youtube.com/watch?v=${listoutput.id.videoId}"  target="_blank" class="btn btn-secondary">youtube Link</a>
+                    <iframe width="100%" height="300px" src="https://www.youtube.com/embed/${listoutput.id.videoId}"></iframe>
+                    <a href="https://www.youtube.com/watch?v=${listoutput.id.videoId}"  target="_blank" class="btn btn-secondary">Youtube Link</a>
                 </div>
                 </div>
                         `;
