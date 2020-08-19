@@ -1,0 +1,196 @@
+* {
+      margin: 0;
+      padding: 0;
+      border: none;
+      outline: none;
+      vertical-align: baseline;
+      font-size: 100%;
+}
+
+html {
+      font-family: Poppins;
+}
+
+body {
+      width: 100%;
+      background: #0E0E0E;
+      display: block;
+      min-width: 580px; 
+}
+
+.wrapper {
+      width: 90%;
+      margin: 0 auto;
+}
+
+.navBar::after {
+      content: "";
+      clear: both;
+      display: table;
+}
+
+h1,h2 {
+      color: #fff;
+      font-size: 48px;
+}
+
+p {
+      color: #fff;
+      font-size: 16px;
+      font-weight: 300;
+}
+
+
+/* navbar */
+nav.navbar{
+display: block;
+ min-width: 580px;
+ background-color: black;
+
+}
+nav {
+      height: 70px;
+      line-height: 70px;
+      
+}
+a{
+      color:white;
+      text-decoration: none;
+      padding: 5px 5px 5px 15px;
+}
+ul {
+      list-style-type: none;
+  }
+
+nav a img {
+      vertical-align: middle;
+      width: 70px;
+      height: 40px;
+}
+
+#navbarResponsive{
+      float: right
+}
+
+/* header */
+
+header {
+      margin: 100px 0 20px 10px;
+      
+}
+
+.headerIntro{
+      width: 100%;
+      height: 90vh;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("bg.jpg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+
+}
+
+.headerText{
+      padding: 30px 0px 0px 10px;
+      font-weight: bolder;
+      font-style: oblique;
+}
+
+header p {
+      width: 60%;
+      margin-top: 10px;
+      font-weight:lighter;
+      font-size: 15px;
+}
+
+
+/* .team memeber */
+
+.team-member {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+      text-align: center;
+    }
+    .team-member img {
+      margin-top: 5rem;
+      width: 14rem;
+      height: 14rem;
+      border: 0.5rem solid rgba(0, 0, 0, 0.1);
+    }
+    .team-member h4 {
+      margin-top: 1.5rem;
+      margin-bottom: 0;
+      color: white;
+    }
+    
+/* .work */
+.work {
+      text-align: center;
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+}
+
+.work img {
+      margin: 1%;
+      width: 477px;
+      height:288px;
+      max-width: 477px;
+}
+
+/* header2 */
+
+.header2 {
+      margin: 130px 0 80px 40px;
+}
+
+
+/* footer */
+footer p {
+      text-align: center;
+      color: grey;
+      margin: 60px auto;
+}
+
+textarea {
+      height: 100%;
+      min-height: 9rem;
+  }
+
+/* Responsiveness */
+
+@media only screen and (max-width: 771px) {
+      header {
+            text-align: left;
+            margin: 100px 0 100px 30px;
+      }
+
+      header h1 {
+            font-size: 36px;
+      }
+
+      header p {
+            font-size: 12px;
+            width: 90%;
+      }
+
+      .work img {
+            margin: 2%;
+            width: 207px;
+            height:108px;
+      }
+
+      .header2 {
+            margin: 130px 0 40px 12px;
+      }
+
+      .header2 h1 {
+            font-size: 36px;
+      }
+
+      .header2 p {
+            font-size: 12px;
+            width: 90%;
+      }
+
+     
+}

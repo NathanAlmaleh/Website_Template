@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Yahel Portfolio Page | HTML & CSS</title>
+      
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="style.css">
+              <!-- Font Awesome icons (free version)-->
+              <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+              <!-- Google fonts-->
+              <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+              <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+              <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+</head>
+<body>
+      <div class="wrapper">
+            <!-- Navigation-->
+            <div>
+        <nav class="navbar navbar-expand-sm min-vw-580 navbar-dark fixed-top" id="mainNav">
+        
+                <a class="navbar-brand " href="#"><img src="logo.png"  /></a>
+                <div class="list navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Gallery">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#teamMember">Info</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+                        <a href="yahelCV.pdf" target="blank">
+                            <button class="btn btn-warning"  type="submit">Download Cv</button>
+                        </a>
+                    </ul>
+                </div>
+        </nav>
+      </div>
+    
+            <header class="headerIntro" > 
+                <div class="headerText ">
+                     <h1 >Yahel Chemo</h1>
+                     <p >Industrial engineers apply their skills to many different situations, from manufacturing to healthcare systems to business administration.</p>
+                </div>
+             </header>
+     
+
+
+                 <!-- Services-->
+        <section class="page-section pt-5" id="services">
+            <div class="container">
+                <div class="text-center">
+                    <h1 class="section-heading pt-3">Services</h1>
+                    <p class="section-subheading text-muted">Experienced in multiple categories</p>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-database   fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3 text-primary">Database</h4>
+                        <p >SQL NoSQL</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3 text-primary">Framework</h4>
+                        <p >Understanding multiple frameworks</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-industry fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3 text-primary">Industry</h4>
+                        <p >Managing factory workers</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+            <div class="work" id="Gallery">
+                  <h1 class="section-heading pt-5">Gallery</h1>
+                  <img class="anim" src="factory.jpeg" alt="project img">
+                  <img class="anim" src="managment.jpeg" alt="project img">
+                  <img class="anim" src="secretary.jpg" alt="project img">
+                  <img class="anim" src="workers.jpg" alt="project img">
+            </div>
+            <div >
+                      <div class="team-member" id="teamMember" >
+                          <img class="mx-auto rounded-circle" src="yahel.jpeg" alt="" />
+                          <h4>Yahel Chemo</h4>
+                          <p class="text-muted">Industrial Engineer</p>
+                          <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/yael.almaleh" target="blank"><i class="fab fa-facebook"></i></a>
+                          <a class="btn btn-dark btn-social mx-2" href="https://www.google.com/" target="blank"><i class="fab fa-linkedin-in"></i></a>
+                      </div>
+            </div>
+                    <!-- Contact-->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="anim section-heading text-uppercase">Contact Me</h2>
+                </div>
+                <form id="contactForm" name="sentMessage" novalidate="novalidate" >
+                    <div class="row align-items-stretch mb-5">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input class="form-control" id="name" type="text" placeholder="Your Name *" required="required"/>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" id="email" type="email" placeholder="Your Email *" required="required" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group mb-md-0">
+                                <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" required="required" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 ">
+                            <div class="form-group form-group-textarea mb-md-0">
+                                <textarea class="form-control " id="message" placeholder="Your Message *" required="required" ></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div id="success"></div>
+                        <button class="btn btn-primary btn-sm text-uppercase" id="sendMessageButton" type="submit">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+            <footer>
+                  <p>Copyright © Yahel portfolio</p>
+            </footer>
+      </div>
+
+</body>
+</html>
